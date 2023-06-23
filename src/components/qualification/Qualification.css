@@ -1,0 +1,129 @@
+.qf__container {
+  max-width: 768px;
+}
+
+.qf__tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--mb-2);
+}
+
+.qf__button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--normal-font-size);
+  margin: 0 var(--mb-1);
+  cursor: pointer;
+}
+
+.qf__button:hover {
+  color: var(--title-color-dark);
+}
+
+.qf__icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qf__active {
+  color: var(--title-color-dark);
+}
+
+.qf__sections {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  justify-content: center;
+}
+
+.qf__content {
+  display: none;
+}
+
+.qf__content-active {
+  display: block;
+}
+
+.qf__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qf__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qf__subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.qf__calendar {
+  font-size: var(--small-font-size);
+  /* font-weight: var(--font-medium); */
+}
+
+.qf__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+}
+
+.qf__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--text-color);
+  transform: translate(6px, -7px);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .qf__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .qf__container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .qf__data {
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .qf__sections {
+    grid-template-columns: initial;
+  }
+  .qf__button {
+    margin: 0 var(--mb-0-75);
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .qf__data {
+    gap: 0.25rem;
+  }
+  .qf__title {
+    font-size: var(--small-font-size);
+  }
+
+  .qf__subtitle {
+    font-size: var(--smaller-font-size);
+  }
+
+  .qf__calendar {
+    font-size: var(--smaller-font-size);
+  }
+}

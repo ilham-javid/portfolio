@@ -1,0 +1,65 @@
+.tst__container {
+    width: 750px;
+}
+
+.tst__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: var(--mb-3);
+}
+
+.tst__header{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.tst__img {
+    width: 60px;
+    border-radius: 50%; 
+    margin-bottom: var(--mb-1);
+}
+
+.tst__name {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.tst__title {
+    margin-bottom: 1rem;
+}
+
+.tst__subtitle {
+    font-size: var(--smaller-font-size);
+}
+
+.tst__description {
+    font-size: var(--small-font-size);
+}
+
+/*  Swiper class */
+
+.swiper-pagination-bullet {
+    background-color: var(--text-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--title-color) !important;
+}
+
+/* ========================== Break point ================================ */
+
+/* for large devices */
+
+@media screen and (max-width: 992px) {
+    .tst__container {
+        padding: 0 2rem !important;
+        width: initial;
+    }
+
+    .tst__card{
+        padding: 1.25rem 1.5rem;
+    }
+}
