@@ -99,10 +99,10 @@ function Contact() {
               <i className="bx bxl-whatsapp ct__card-icon"></i>
 
               <h3 className="ct__card-title">Whatsapp</h3>
-              <span className="ct__card-data">(+94) 770-1000-64</span>
+              <span className="ct__card-data">(+94) 74-074-6211</span>
 
               <a
-                href="https://api.whatsapp.com/send?phone=94770100064&text=Hello!"
+                href="https://api.whatsapp.com/send?phone=94740746211&text=Hello!"
                 className="ct__button"
                 target="_blank"
                 rel="noreferrer"
